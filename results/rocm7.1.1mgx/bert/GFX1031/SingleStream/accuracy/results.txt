@@ -1,0 +1,30 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1768421366.544563   90933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1768421366.544615   90933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1768421366.544617   90933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1768421366.544619   90933 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-01-14 20:09:26.548623: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/.venv/lib/python3.12/site-packages/keras/src/export/tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+[0;93m2026-01-14 20:09:33.010652689 [W:onnxruntime:, graph.cc:4859 CleanUnusedInitializersAndNodeArgs] Removing initializer 'bert.pooler.dense.bias'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-01-14 20:09:33.010710409 [W:onnxruntime:, graph.cc:4859 CleanUnusedInitializersAndNodeArgs] Removing initializer 'bert.pooler.dense.weight'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-01-14 20:09:34.211114445 [W:onnxruntime:Default, migraphx_execution_provider.cc:167 MIGraphXExecutionProvider] [MIGraphX EP] MIGraphX ENV Override Variables Set:[m
+[0;93m2026-01-14 20:09:46.125039940 [W:onnxruntime:Default, migraphx_execution_provider.cc:1289 compile_program] Model Compile: Begin[m
+[0;93m2026-01-14 20:11:44.341955314 [W:onnxruntime:Default, migraphx_execution_provider.cc:1294 compile_program] Model Compile: Complete[m
+
+No warnings encountered during test.
+
+No errors encountered during test.
+Loading ONNX model...
+Constructing SUT...
+Finished constructing SUT.
+Constructing QSL...
+Loading cached features from 'eval_features.pickle'...
+Finished constructing QSL.
+Running LoadGen test...
+Done!
+Destroying SUT...
+Destroying QSL...
+Finished destroying SUT.
+Finished destroying QSL.

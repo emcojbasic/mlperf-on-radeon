@@ -1,0 +1,25 @@
+2026-01-18 20:00:15.734192: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/.venv/lib/python3.12/site-packages/keras/src/export/tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+[0;93m2026-01-18 20:02:56.879419682 [W:onnxruntime:, graph.cc:4381 CleanUnusedInitializersAndNodeArgs] Removing initializer 'bert.pooler.dense.bias'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-01-18 20:02:56.879475951 [W:onnxruntime:, graph.cc:4381 CleanUnusedInitializersAndNodeArgs] Removing initializer 'bert.pooler.dense.weight'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-01-18 20:03:00.757278817 [W:onnxruntime:Default, migraphx_execution_provider.cc:168 get_flags_from_env] [MIGraphX EP] MIGraphX ENV Override Variables Set:[m
+[0;93m2026-01-18 20:03:14.570900150 [W:onnxruntime:Default, migraphx_execution_provider.cc:1295 compile_program] Model Compile: Begin[m
+[0;93m2026-01-18 20:04:58.135255777 [W:onnxruntime:Default, migraphx_execution_provider.cc:1300 compile_program] Model Compile: Complete[m
+
+No warnings encountered during test.
+
+No errors encountered during test.
+Loading ONNX model...
+Constructing SUT...
+Finished constructing SUT.
+Constructing QSL...
+Loading cached features from 'eval_features.pickle'...
+Finished constructing QSL.
+Running LoadGen test...
+Done!
+Destroying SUT...
+Destroying QSL...
+Finished destroying SUT.
+Finished destroying QSL.

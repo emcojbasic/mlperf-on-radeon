@@ -1,0 +1,85 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+W0000 00:00:1768420745.207153   70766 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1768420745.207213   70766 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1768420745.207215   70766 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1768420745.207216   70766 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-01-14 19:59:05.211241: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/.venv/lib/python3.12/site-packages/keras/src/export/tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+[0;93m2026-01-14 19:59:11.789597776 [W:onnxruntime:, graph.cc:4859 CleanUnusedInitializersAndNodeArgs] Removing initializer 'bert.pooler.dense.bias'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-01-14 19:59:11.789655226 [W:onnxruntime:, graph.cc:4859 CleanUnusedInitializersAndNodeArgs] Removing initializer 'bert.pooler.dense.weight'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-01-14 19:59:12.987186734 [W:onnxruntime:Default, migraphx_execution_provider.cc:167 MIGraphXExecutionProvider] [MIGraphX EP] MIGraphX ENV Override Variables Set:[m
+[0;93m2026-01-14 19:59:25.026154652 [W:onnxruntime:Default, migraphx_execution_provider.cc:1289 compile_program] Model Compile: Begin[m
+[0;93m2026-01-14 20:01:24.441357112 [W:onnxruntime:Default, migraphx_execution_provider.cc:1294 compile_program] Model Compile: Complete[m
+================================================
+MLPerf Results Summary
+================================================
+SUT name : PySUT
+Scenario : SingleStream
+Mode     : PerformanceOnly
+90.0th percentile latency (ns) : 34047743
+Result is : VALID
+  Min duration satisfied : Yes
+  Min queries satisfied : Yes
+  Early stopping satisfied: Yes
+Early Stopping Result:
+ * Processed at least 64 queries (14106).
+ * Would discard 1326 highest latency queries.
+ * Early stopping 90.0th percentile estimate: 34053074
+ * Early stopping 99.0th percentile estimate: 34380947
+
+================================================
+Additional Stats
+================================================
+QPS w/ loadgen overhead         : 23.51
+QPS w/o loadgen overhead        : 23.53
+
+Min latency (ns)                : 33037462
+Max latency (ns)                : 121047647293
+Mean latency (ns)               : 42505772
+50.00 percentile latency (ns)   : 33874990
+90.00 percentile latency (ns)   : 34047743
+95.00 percentile latency (ns)   : 34116937
+97.00 percentile latency (ns)   : 34197293
+99.00 percentile latency (ns)   : 34362666
+99.90 percentile latency (ns)   : 36842257
+
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 1
+target_qps : 100
+target_latency (ns): 0
+max_async_queries : 1
+min_duration (ms): 600000
+max_duration (ms): 0
+min_query_count : 100
+max_query_count : 0
+qsl_rng_seed : 1780908523862526354
+sample_index_rng_seed : 14771362308971278857
+schedule_rng_seed : 18209322760996052031
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+performance_issue_same_index : 0
+performance_sample_count : 10833
+
+No warnings encountered during test.
+
+No errors encountered during test.
+Loading ONNX model...
+Constructing SUT...
+Finished constructing SUT.
+Constructing QSL...
+Loading cached features from 'eval_features.pickle'...
+Finished constructing QSL.
+Running LoadGen test...
+Done!
+Destroying SUT...
+Destroying QSL...
+Finished destroying SUT.
+Finished destroying QSL.
