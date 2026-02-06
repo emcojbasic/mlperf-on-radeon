@@ -40,7 +40,7 @@ usage() {
 # Script header information
 # ---------------------------------
 echo -e "============================== ${BYellow}Script Info${NC} =============================="
-echo -e "${BYellow}Author: ${BLBlue}Nikola Catic @HTEC${NC}"
+echo -e "${BYellow}Author: ${BLBlue}Nikola Catic, Emilija Cojbasic @HTEC${NC}"
 echo -e "${BYellow}Date: ${BLBlue}$(date +"%Y-%m-%d")${NC}"
 echo -e "${BYellow}Description: ${BLBlue}Run MLPerf BERT Inference benchmark${NC}"
 echo "=========================================================================="

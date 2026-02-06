@@ -28,7 +28,7 @@ usage() {
 # Script Info
 # ---------------------------------
 echo -e "============================ ${BYellow}Script Info${NC} ============================"
-echo -e "${BYellow}Author     :${NC} ${BLBlue}Nikola Catic @HTEC${NC}"
+echo -e "${BYellow}Author     :${NC} ${BLBlue}Nikola Catic, Emilija Cojbasic @HTEC${NC}"
 echo -e "${BYellow}Date       :${NC} ${BLBlue}$(date +"%Y-%m-%d")${NC}"
 echo -e "${BYellow}Description:${NC} ${BLBlue}Run MLPerf BERT Inference benchmark on multiple GPUs${NC}"
 echo "==============================================================================="

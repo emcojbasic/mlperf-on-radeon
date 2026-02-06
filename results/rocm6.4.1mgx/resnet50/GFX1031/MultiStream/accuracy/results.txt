@@ -1,0 +1,10 @@
+INFO:main:Namespace(dataset='imagenet', dataset_path='/dataset/imagenet/', dataset_list=None, data_format=None, profile=None, scenario='MultiStream', max_batchsize=32, model='/model/resnet50_v1.onnx', output='/root/inference/vision/classification_and_detection/results/GFX1031/edge/MultiStream/accuracy/', inputs=None, outputs=None, backend='onnxruntime', device='rocm', model_name='resnet50', threads=112, qps=None, cache=0, cache_dir=None, preprocessed_dir=None, use_preprocessed_dataset=False, accuracy=True, find_peak_performance=False, debug=False, user_conf='/root/inference/vision/classification_and_detection/user_gfx1030.conf', audit_conf='audit.config', time=None, count=None, performance_sample_count=None, max_latency=None, samples_per_query=8)
+INFO:imagenet:Preprocessing 50000 images using 112 threads
+INFO:imagenet:loaded 50000 images, cache=0, already_preprocessed=False, took=4.2sec
+[0;93m2026-01-15 09:15:03.243009277 [W:onnxruntime:Default, migraphx_execution_provider.cc:168 get_flags_from_env] [MIGraphX EP] MIGraphX ENV Override Variables Set:[m
+[0;93m2026-01-15 09:15:03.958502463 [W:onnxruntime:Default, migraphx_execution_provider.cc:1295 compile_program] Model Compile: Begin[m
+[0;93m2026-01-15 09:15:23.870816832 [W:onnxruntime:Default, migraphx_execution_provider.cc:1300 compile_program] Model Compile: Complete[m
+INFO:main:starting TestScenario.MultiStream
+[0;93m2026-01-15 09:15:24.731342824 [W:onnxruntime:Default, migraphx_execution_provider.cc:1295 compile_program] Model Compile: Begin[m
+[0;93m2026-01-15 09:15:55.022495570 [W:onnxruntime:Default, migraphx_execution_provider.cc:1300 compile_program] Model Compile: Complete[m
+TestScenario.MultiStream qps=5103.69, mean=0.0158, time=1.225, acc=76.456%, queries=6250, tiles=50.0:0.0107,80.0:0.0108,90.0:0.0110,95.0:0.0112,99.0:0.0201,99.9:0.0228
